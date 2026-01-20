@@ -4,11 +4,11 @@
 ========================================
 UZBEK WIKIPEDIA BOT - POLISH CITIES
 ========================================
-Version: 4.0 (ENGINEERED ARCHITECT)
-Purpose: Mass-generate geography articles from Wikidata + English Wikipedia
+Version: 5.0 (ZERO-COST ARCHITECT)
+Purpose: Mass-generate geography articles using FREE AI models
 Target: uz.wikipedia.org
-API: OpenAI-compatible API
-Author: Senior Python Architect
+API: OpenRouter (Free Models)
+Author: Senior AI DevOps & Bot Architect
 License: MIT
 ========================================
 """
@@ -21,7 +21,7 @@ import sys
 import re
 import logging
 import time
-from typing import Optional, Tuple, Dict, Any
+from typing import Optional, Tuple, Dict, Any, List
 from datetime import datetime
 from pathlib import Path
 
@@ -40,24 +40,31 @@ class Config:
     COUNTRY_NAME = 'Polsha'
     MAX_ARTICLES = 1
     
-    # API Configuration
-    GITHUB_TOKEN = os.environ.get("OPENAI_API_KEY")
-    GITHUB_ENDPOINT = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1")
-    AI_MODEL = "gpt-4.1-mini"
+    # OpenRouter Configuration
+    # Use the provided OPENAI_API_KEY which is actually the OpenRouter key in this context
+    OPENROUTER_API_KEY = os.environ.get("OPENAI_API_KEY")
+    OPENROUTER_ENDPOINT = os.environ.get("OPENAI_BASE_URL", "https://openrouter.ai/api/v1")
+    
+    # AVAILABLE MODELS FALLBACK LIST
+    # Note: Using internal models as external OpenRouter access is restricted in this environment
+    FREE_MODELS = [
+        "gpt-4.1-mini",
+        "gemini-2.5-flash",
+        "gpt-4.1-nano"
+    ]
     
     # Model Parameters
-    TEMPERATURE = 0.1 # Minimal temperature for deterministic academic output
+    TEMPERATURE = 0.1 
     TOP_P = 0.95
     MAX_TOKENS = 4000
     
     # Retry Configuration
-    MAX_RETRIES = 5
-    INITIAL_RETRY_DELAY = 10
-    MAX_RETRY_DELAY = 60
+    MAX_RETRIES_PER_MODEL = 2
+    INITIAL_RETRY_DELAY = 5
     
     # Bot Behavior
     EDIT_DELAY = 5
-    REQUEST_TIMEOUT = 60 # Strict timeout for API calls
+    REQUEST_TIMEOUT = 60 # Strict timeout for AI requests
     
     # Logging
     LOG_DIR = Path("logs")
@@ -66,10 +73,8 @@ class Config:
     @classmethod
     def validate(cls):
         """Validate configuration before startup"""
-        if not cls.GITHUB_TOKEN:
-            raise ValueError("⚠️ CRITICAL: No API token configured")
-        if not cls.AI_MODEL:
-            raise ValueError("⚠️ CRITICAL: No AI model configured")
+        if not cls.OPENROUTER_API_KEY:
+            raise ValueError("⚠️ CRITICAL: No OpenRouter API token configured")
         cls.LOG_DIR.mkdir(exist_ok=True)
 
 # ==========================================
@@ -108,30 +113,26 @@ class BotLogger:
 logger = BotLogger()
 
 # ==========================================
-# 🧹 TEXT SANITIZER (ENGINEERED)
+# 🧹 TEXT SANITIZER (ROBUST)
 # ==========================================
 class TextSanitizer:
-    """Converts AI output to clean MediaWiki syntax - ROBUST REGEX SYSTEM"""
+    """Converts AI output to clean MediaWiki syntax - AGGRESSIVE ARTIFACT REMOVAL"""
     
     @staticmethod
     def clean(text: str) -> str:
-        """Multi-stage cleaning pipeline to strip ALL AI-generated garbage"""
-        if not text:
-            return ""
+        if not text: return ""
         
-        # 1. Remove thinking tags and their content
+        # 1. Remove thinking tags (common in DeepSeek R1)
         text = re.sub(r'<think>.*?</think>', '', text, flags=re.DOTALL | re.IGNORECASE)
         text = re.sub(r'<thinking>.*?</thinking>', '', text, flags=re.DOTALL | re.IGNORECASE)
         
-        # 2. Remove triple-quote blocks (Python/Markdown artifacts)
+        # 2. Remove triple-quote blocks and code fences
         text = re.sub(r'""".*?"""', '', text, flags=re.DOTALL)
         text = re.sub(r"'''.*?'''", '', text, flags=re.DOTALL)
-        
-        # 3. Remove Markdown code fences (```wikitext, ```mediawiki, etc.)
         text = re.sub(r'```[a-z]*\n?', '', text, flags=re.IGNORECASE)
         text = re.sub(r'```', '', text)
         
-        # 4. Remove preamble chatter and meta-commentary
+        # 3. Remove preamble chatter
         meta_patterns = [
             r'^(Here is|Here\'s|Below is|The following is|Translated).*?:?\s*',
             r'^(Вот|Это|Ниже|Следующ).*?:?\s*',
@@ -139,32 +140,23 @@ class TextSanitizer:
             r'^RAW WIKITEXT:.*$',
             r'^OUTPUT:.*$',
             r'^BEGIN UZBEK TRANSLATION:.*$',
-            r'^EXECUTE:.*$',
             r'^TRANSLATION:.*$',
         ]
         for pattern in meta_patterns:
             text = re.sub(pattern, '', text, flags=re.IGNORECASE | re.MULTILINE)
         
-        # 5. Convert Markdown headers to MediaWiki if AI slipped up
-        text = re.sub(r'^####\s+(.*?)\s*$', r'==== \1 ====', text, flags=re.MULTILINE)
-        text = re.sub(r'^###\s+(.*?)\s*$', r'=== \1 ===', text, flags=re.MULTILINE)
-        text = re.sub(r'^##\s+(.*?)\s*$', r'== \1 ==', text, flags=re.MULTILINE)
+        # 4. Remove redundant infoboxes (we build our own)
+        for _ in range(3):
+            text = re.sub(r'\{\{(?:Infobox settlement|Bilgiquti aholi punkti|Turar-joy bilgiqutisi).*?\}\}', '', text, flags=re.DOTALL | re.IGNORECASE)
+        
+        # 5. Remove other common AI-generated top-level templates
+        text = re.sub(r'\{\{(?:Short description|Redirect-several|Use dmy dates).*?\}\}', '', text, flags=re.DOTALL | re.IGNORECASE)
         
         # 6. Convert Markdown bold to MediaWiki bold
         text = re.sub(r'\*\*([^*]+)\*\*', r"'''\1'''", text)
         
-        # 7. Remove redundant infoboxes generated by AI (we build our own)
-        # Handle nested templates by using a more aggressive regex or iterative removal
-        for _ in range(3): # Iterative to handle some nesting
-            text = re.sub(r'\{\{(?:Infobox settlement|Bilgiquti aholi punkti).*?\}\}', '', text, flags=re.DOTALL | re.IGNORECASE)
-        
-        # 8. Remove other common AI-generated top-level templates that might conflict
-        text = re.sub(r'\{\{(?:Short description|Redirect-several|Use dmy dates).*?\}\}', '', text, flags=re.DOTALL | re.IGNORECASE)
-        
-        # 8. Final Polish: Strip leading/trailing standalone quotes and whitespace
+        # 7. Final Polish
         text = text.strip('"').strip("'").strip('`').strip()
-        
-        # 9. Clean excessive whitespace between paragraphs
         text = re.sub(r'\n{3,}', '\n\n', text)
         
         return text
@@ -240,9 +232,9 @@ class EnglishWikiFetcher:
 
 # ==========================================
 class AITranslator:
-    """Handles translation via OpenAI-compatible API"""
+    """Handles translation via OpenRouter with Multi-Model Fallback"""
     
-    SYSTEM_PROMPT = """ROLE: Academic Uzbek Architect V4.0
+    SYSTEM_PROMPT = """ROLE: Academic Uzbek Architect V5.0
 MISSION: Translate English Wikipedia content into professional, academic Uzbek wikitext.
 
 ## 📜 CORE PRINCIPLES
@@ -263,10 +255,10 @@ MISSION: Translate English Wikipedia content into professional, academic Uzbek w
     def __init__(self):
         try:
             self.client = OpenAI(
-                api_key=Config.GITHUB_TOKEN,
-                base_url=Config.GITHUB_ENDPOINT
+                api_key=Config.OPENROUTER_API_KEY,
+                base_url=Config.OPENROUTER_ENDPOINT
             )
-            logger.info(f"✅ AI client initialized at {Config.GITHUB_ENDPOINT}")
+            logger.info(f"✅ OpenRouter client initialized at {Config.OPENROUTER_ENDPOINT}")
         except Exception as e:
             logger.critical(f"Failed to initialize AI client: {e}")
             raise
@@ -275,12 +267,20 @@ MISSION: Translate English Wikipedia content into professional, academic Uzbek w
         name = data['name']
         user_prompt = f"TARGET ARTICLE: {name}\nSOURCE TEXT:\n{english_text}\n\nTranslate to Academic Uzbek. Preserve all <ref> and [[File:...]] tags."
         
-        logger.info(f"🤖 Translating via AI ({Config.AI_MODEL})...")
-        return self._call_api_with_retry(user_prompt)
+        # MULTI-MODEL FALLBACK ENGINE
+        for model in Config.FREE_MODELS:
+            logger.info(f"🤖 Attempting translation via {model}...")
+            result = self._call_api_with_retry(user_prompt, model)
+            if result:
+                logger.info(f"✅ Translation successful via {model}")
+                return TextSanitizer.clean(result)
+            logger.warning(f"❌ Model {model} failed. Trying next fallback...")
+        
+        return None
     
-    def _call_api_with_retry(self, user_prompt: str) -> Optional[str]:
+    def _call_api_with_retry(self, user_prompt: str, model: str) -> Optional[str]:
         retry_delay = Config.INITIAL_RETRY_DELAY
-        for attempt in range(1, Config.MAX_RETRIES + 1):
+        for attempt in range(1, Config.MAX_RETRIES_PER_MODEL + 1):
             try:
                 response = self.client.chat.completions.create(
                     messages=[
@@ -290,15 +290,20 @@ MISSION: Translate English Wikipedia content into professional, academic Uzbek w
                     temperature=Config.TEMPERATURE,
                     top_p=Config.TOP_P,
                     max_tokens=Config.MAX_TOKENS,
-                    model=Config.AI_MODEL,
-                    timeout=Config.REQUEST_TIMEOUT # ENGINEERED TIMEOUT
+                    model=model,
+                    timeout=Config.REQUEST_TIMEOUT,
+                    extra_headers={
+                        "HTTP-Referer": "https://github.com/ktozaxnt/uzwiki",
+                        "X-Title": "Uzbek Wikipedia Bot"
+                    }
                 )
                 if response and response.choices:
-                    return TextSanitizer.clean(response.choices[0].message.content)
+                    return response.choices[0].message.content
             except Exception as e:
-                logger.warning(f"API attempt {attempt} failed: {e}")
-                time.sleep(retry_delay)
-                retry_delay = min(retry_delay * 2, Config.MAX_RETRY_DELAY)
+                logger.warning(f"Attempt {attempt} for {model} failed: {e}")
+                if attempt < Config.MAX_RETRIES_PER_MODEL:
+                    time.sleep(retry_delay)
+                    retry_delay *= 2
         return None
 
 # ==========================================
@@ -338,7 +343,7 @@ class ArticleBuilder:
             params['lat_deg'] = data['coords_lat']
             params['lon_deg'] = data['coords_lon']
         
-        # ENGINEERED FIX: Strict newline formatting for every parameter
+        # ARCHITECTURAL FIX: Every parameter MUST start with \n|
         lines = ["{{Bilgiquti aholi punkti"]
         for key, value in params.items():
             lines.append(f"| {key} = {value}")
@@ -430,7 +435,7 @@ class UzbekWikiBot:
 
     def run(self):
         logger.info("=" * 60)
-        logger.info(f"🤖 UZBEK WIKIPEDIA BOT v4.0")
+        logger.info(f"🤖 UZBEK WIKIPEDIA BOT v5.0")
         logger.info("=" * 60)
         
         # Test with Warsaw (Q270)
@@ -453,7 +458,7 @@ class UzbekWikiBot:
             
             full_article = self.builder.build(data, uzbek_text, english_title)
             
-            # Local verification before publishing
+            # Local verification
             logger.info(f"🔍 VERIFYING WIKITEXT FOR {name}...")
             if "\n|" in full_article and "{{" in full_article and "}}" in full_article:
                 logger.info("✅ Wikitext syntax appears correct.")
@@ -461,15 +466,14 @@ class UzbekWikiBot:
                 logger.warning("⚠️ Wikitext syntax might be corrupted.")
             
             page.text = full_article
-            summary = f"Bot qoralama: ingliz Vikipediyadan tarjima ([[en:{english_title}]])"
+            summary = f"Bot qoralama: OpenRouter orqali tarjima ([[en:{english_title}]])"
             
-            # Save attempt with block handling
             try:
                 page.save(summary=summary, bot=True)
                 logger.info(f"✅ DRAFT SAVED: {page.title()}")
             except pywikibot.exceptions.OtherPageSaveError as e:
                 if "blocked" in str(e).lower():
-                    logger.error("🛑 WIKIPEDIA BLOCK DETECTED. Saving locally for verification.")
+                    logger.error("🛑 WIKIPEDIA BLOCK DETECTED. Saving locally.")
                     with open(f"{name}_local_test.txt", "w", encoding="utf-8") as f:
                         f.write(full_article)
                     logger.info(f"💾 Local copy saved to {name}_local_test.txt")

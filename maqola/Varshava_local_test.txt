@@ -16,7 +16,7 @@
 
 | native_name_lang        = pl
 | settlement_type         = [[Poytaxt shahri]] va [[Shahar va tuman huquqiga ega shaharlar|tuman]]
-| official_name           = Varshava poytaxt shahri<br/>{{lower|0.1em|{{nobold|{{langx|pl|miasto stołeczne Warszawa}}}}}}
+| official_name           = Varshava Poytaxt Shahri<br/>{{lower|0.1em|{{nobold|{{langx|pl|miasto stołeczne Warszawa}}}}}}
 | image_skyline           = {{multiple image
 | total_width   =288
 | border = infobox
@@ -27,24 +27,24 @@
 | caption1 = [[Varshavadagi eng baland binolar ro‘yxati|Shahar manzarasi]] va [[Varso]] (chapda) hamda [[Madaniyat va fan saroyi|PKiN]] (o‘ngda)
 | image2 = 2021 Warszawa Rynek Starego Miasta, północny fragment strony Kołłątaja.jpg
 | alt2 = Bozor maydoni
-| caption2 = [[Varshava Eski shahar bozor maydoni|Bozor maydoni]]
+| caption2 = [[Varshava Eski shahar bozori|Bozor maydoni]]
 | image3 = Kolumna Zygmunta III Wazy,Warszawa (cropped).jpg
-| alt3 = Sigismund ustuni va Qirollik qal’asi
-| caption3 = [[Varshava Qirollik qal’asi|Qal’a]]
+| alt3 = Sigismund ustuni va Qirollik qal'asi
+| caption3 = [[Varshava Qirollik qal'asi|Qal'a]]
 | image4 = Warsaw 2023 183.jpg
 | alt4 = Buyuk teatr va opera uyi
 | caption4 = [[Varshava Buyuk teatri|Teatr]]
 | image5 = Kamienica Al. Róż 2 w Warszawie 2021.jpg
-| alt5 = Ujazdov ko‘chasidagi binolar
-| caption5 = [[Ujazdov ko‘chasi]]
+| alt5 = Ujazdów prospektidagi binolar
+| caption5 = [[Ujazdów prospekti]]
 | image6 = Bazylika Świętego Krzyża w Warszawie 2021.jpg
 | alt6 = Muqaddas Xoch cherkovi
 | caption6 = [[Varshava Muqaddas Xoch cherkovi|Muqaddas Xoch ch.]]
 | image7 = Prudential w Warszawie 2021.jpg
-| alt7 = Prudensial uyi
-| caption7 = [[Prudential House|Prudensial]]
+| alt7 = Prudential uyi
+| caption7 = [[Prudential House|Prudent.]]
 | image8 = Pałac na Wodzie,Łazienki Królewskie,Warszawa.jpg
-| alt8 = Łazienki bog‘idagi orol saroyi
+| alt8 = Łazienki bog‘idagi Suv saroyi
 | caption8 = [[Łazienki bog‘i]]
 | image9 = Pałac w Wilanowie 1.jpg
 | alt9 = Vilanov saroyi
@@ -55,13 +55,13 @@
 | image_blank_emblem      = Warsaw_logo_2022.svg
 | nicknames                = ''Fenix shahri'',<ref>{{cite news |last1=Rayasam |first1=Renuka |title=This once-dark city is becoming the darling of Europe |url=https://www.bbc.com/worklife/article/20160504-this-once-dark-city-is-becoming-the-darling-of-europe |work=BBC |date=10 May 2016}}</ref> [[Shimoliy Parij]],<ref>{{cite web|title=Czy przedwojenna Warszawa była Paryżem Północy? "Łączyła Wschód z Zachodem"|url=https://jedynka.polskieradio.pl/artykul/3458950,Czy-przedwojenna-Warszawa-by%C5%82a-Pary%C5%BCem-P%C3%B3%C5%82nocy-%C5%81%C4%85czy%C5%82a-Wsch%C3%B3d-z-Zachodem |access-date=8 September 2025 |work=[[Polskie Radio Program I]]|date=8 September 2025}}</ref><ref>{{cite web|title=Mówiono o niej Paryż Północy... zobacz jak wyglądała Warszawa przed wojną. |url=https://viva.pl/styl-zycia/zobacz-zdjecia-warszawy-przedwojennej-30621-r3/ |access-date=8 September 2025 |work=[[Viva (American magazine)]]|date=8 September 2025}}</ref> Vava<ref>{{cite web|title=Miejski słownik Slangu i mowy potocznej "Wawa" |url=https://www.miejski.pl/slowo-Wawa#:~:text=Skr%C3%B3t%20do%20miasta%20Warszawa. |access-date=8 September 2025 |work=miejski.pl|date=8 September 2025}}</ref><ref>{{cite web|title=WAWA Bohaterom |url=https://warszawa.tvp.pl/35874370/wawa-bohaterom. |access-date=8 September 2025 |work=[[Telewizja Polska]]|date=8 September 2025}}</ref>
 | motto                   = ''Semper invicta''{{spaces|2}}<small>([[Lotin tili|Lotincha]] «Har doim mag‘lub etilmas»)</small>
-| pushpin_map             = Polsha#Yevropa
-| pushpin_relief          = ha
+| pushpin_map             = Poland#Europe
+| pushpin_relief          = yes
 | coordinates             = {{coord|52|13|48|N|21|00|40|E|region:PL_type:city(1,800,000)|display=title,inline}}
 | subdivision_type        = [[Mustaqil davlatlar ro‘yxati|Davlat]]
 | subdivision_name        = {{POL}}
-| subdivision_type1       = [[Polshaning viloyatlari|Viloyat]]
-| subdivision_type2       = [[Tumanlar ro‘yxati|Tuman]]
+| subdivision_type1       = [[Polsha viloyatlari|Viloyat]]
+| subdivision_type2       = [[Tuman|Tuman]]
 | subdivision_name1       = [[Mazovya viloyati|Mazovya]]
 | subdivision_name2       = ''Shahar tumani''
 | established_title       = Tashkil topgan
@@ -69,11 +69,11 @@
 | established_title1      = Shahar huquqlari
 | established_date1       = 1300
 | parts_style             = coll
-| parts_type              = [[Ma'muriy bo‘linmalar|Bo‘linmalar]]
+| parts_type              = [[Ma'muriy bo‘linish|Bo‘linmalar]]
 | parts                   = [[Varshava tumanlari va mahallalari ro‘yxati|18 tuman]]
 | seat_type               = [[Shahar hokimiyati|Shahar hokimiyati]]
 | seat                    = {{plainlist|
-* [[Daromadlar va xazina bo‘yicha hukumat komissiyasi saroyi]]
+* [[Daromadlar va xazina hukumat komissiyasi saroyi]]
 * [[Xazina vaziri saroyi]]}}
 | leader_party            = 
 | leader_title            = [[Varshava shahar hokimlari ro‘yxati|Shahar hokimi]]
@@ -82,7 +82,7 @@
 | leader_name1            = [[Sejm saylov okrugi №19|20 deputat]]
 | leader_title3           = [[Yevropa Parlamenti]]
 | leader_name3            = [[Varshava (Yevropa Parlamenti saylov okrugi)|Varshava saylov okrugi]]
-| government_type         = [[Shahar hokimi va kengash boshqaruvi]]
+| government_type         = [[Shahar hokimi-kengash boshqaruvi]]
 | governing_body          = [[Varshava shahar kengashi]]
 | area_total_km2          = 517.24
 | area_urban_km2          = 546.00
@@ -94,15 +94,15 @@
 | population_density_km2  = 3601
 | population_urban        = 2028000<ref name=Demographia>{{citation|title=Demographia World Urban Areas 19th Annual: 2023 08|url=https://www.demographia.com/db-worldua.pdf|website=demographia.com}}</ref>
 | population_density_urban_km2 = 3714
-| population_metro        = 3269510<ref>{{Cite web |url=https://ec.europa.eu/eurostat/databrowser/view/DEMO_R_D2JAN/default/table?lang=en |title=Yosh, jins va NUTS 2 hudud bo‘yicha 1-yanvar holatidagi aholisi |publisher=[[Eurostat]] |access-date=29 February 2024}}</ref>
+| population_metro        = 3269510<ref>{{Cite web |url=https://ec.europa.eu/eurostat/databrowser/view/DEMO_R_D2JAN/default/table?lang=en |title=Yosh, jins va NUTS 2 hududlari bo‘yicha 1-yanvar holatidagi aholisi |publisher=[[Eurostat]] |access-date=29 February 2024}}</ref>
 | population_density_metro_km2 = 509.1
-| population_rank         = [[Polshadagi shaharlar ro‘yxati|Polshada 1-o‘rin]] <br/>[[Yevropa Ittifoqidagi shaharlar aholisi bo‘yicha ro‘yxat|Yevropa Ittifoqida 6-o‘rin]]
+| population_rank         = [[Polshadagi shaharlar ro‘yxati|Polshada 1-o‘rin]] <br/>[[Yevropa Ittifoqidagi shaharlar ro‘yxati|Yevropa Ittifoqida 6-o‘rin]]
 | population_demonym      = Varsoviyalik
 | demographics_type1      = YaIM {{Nobold|(Nominal)}}
-| demographics1_footnotes = <ref>{{cite web | url=https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gdp/default/table | title=Joriy bozor narxlari bo‘yicha yalpi ichki mahsulot (YaIM) NUTS 3 hududlarida|website=ec.europa.eu}}</ref>
+| demographics1_footnotes = <ref>{{cite web | url=https://ec.europa.eu/eurostat/databrowser/view/nama_10r_3gdp/default/table | title=Joriy bozor narxlari bo‘yicha yalpi ichki mahsulot (YaIM) NUTS 3 hududlari bo‘yicha|website=ec.europa.eu}}</ref>
 | demographics1_title1    = [[Poytaxt shahri]] va [[Shahar va tuman huquqiga ega shaharlar|tuman]]
 | demographics1_info1     = €{{FXConvert|EUR|91.323|year=2022|b|lk=on}}
-| demographics1_title2    = Har bir kishi uchun
+| demographics1_title2    = Bir kishiga to‘g‘ri keladigan
 | demographics1_info2     = €{{FXConvert|EUR|49000|year=2022}}
 | blank_name              = [[Shahar byudjeti]]
 | blank_info              = zl 24.368 milliard <br />(€5.4 milliard)<ref>{{Cite web|url=https://warszawa.stat.gov.pl/download/gfx/warszawa/en/defaultstronaopisowa/734/1/1/21_wwa_16_finanse_publiczne.pdf|title=Varshava poytaxt shahri byudjeti xarajatlari turi bo‘yicha|access-date=8 January 2023|archive-date=22 February 2023|archive-url=https://web.archive.org/web/20230222111010/https://warszawa.stat.gov.pl/download/gfx/warszawa/en/defaultstronaopisowa/734/1/1/21_wwa_16_finanse_publiczne.pdf|url-status=dead}}</ref>
@@ -113,7 +113,7 @@
 | module                  = {{designation list
 | embed = yes
 | designation1 = WHS
-| designation1_offname = [[Varshava Eski shahar|Varshava tarixiy markazi]]
+| designation1_offname = [[Varshava Eski shahri|Varshava tarixiy markazi]]
 | designation1_date = 1980 (4-[[]]Jahon merosi qo‘mitasi sessiyasi)
 | designation1_number = [https://whc.unesco.org/en/list/30 30]
 | designation1_criteria = ii, vi
@@ -122,7 +122,7 @@
 | designation1_free1value = [[Yevropadagi Jahon merosi obyektlari ro‘yxati|Yevropa]]
  }}
 | blank_name_sec2         = Iqlim
-| blank_info_sec2         = [[Yozda iliq nam kontinental iqlim]] (Dfb)
+| blank_info_sec2         = [[Yozgi iliq nam kontinental iqlim]] (Dfb)
 | timezone                = [[Markaziy Yevropa vaqti|CET]]
 | utc_offset              = +01:00
 | timezone_DST            = [[Markaziy Yevropa yozgi vaqti|CEST]]
@@ -132,9 +132,9 @@
 }}
 [[File:Hejnal Warszawski.ogg|thumb|Varsoviyaliklar trubkasi chaqirig‘i]]
 
-,{{efn|Inglizcha talaffuzi: {{IPAc-en|ˈ|w|ɔːr|s|ɔː}}, {{Respell|WOR|saw}}; {{langx|pl|Warszawa}} {{IPA|pl|varˈʂava||Pl-Warszawa.ogg}}; {{langx|la|Varsovia}} yoki {{lang|la|Varsavia}}}} rasmiy nomi bilan ,<ref>{{Cite web |url=http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001817 |title=''Polsha qonunlar jurnali'', pozitsiya 1817, 2018 |access-date=30 August 2021 |archive-date=30 August 2021 |archive-url=https://web.archive.org/web/20210830113953/http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001817 |url-status=live }}</ref>{{efn|{{langx|pl|miasto stołeczne Warszawa|links=no}} {{IPA|pl|ˈmjastɔ stɔˈwɛt͡ʂnɛ varˈʂava||Pl-miasto stołeczne.ogg}}, qisqartmasi: {{lang|pl|m.st. Warszawa}}.}} Polshaning poytaxti va [[Polshadagi shaharlar ro‘yxati|eng yirik shahri]] hisoblanadi.{{efn|Varshava aholisi bo‘yicha Polshaning eng yirik shahri, maydon bo‘yicha esa ikkinchi o‘rinda turadi.<ref>{{cite web |author=<!-- ko‘rsatilmagan --> |date=2024 |title=Polshadagi eng katta maydonli shaharlar |url=https://www.polskawliczbach.pl/miasta_o_najwiekszej_powierzchni_w_polsce |website=polskawliczbach.pl |lang=pl |access-date=3 January 2026}}</ref>}}{{TERYT}} Metropoliten shahri sharqiy-markaziy Polshada [[Visla daryosi|Visla daryosi]] sohilida joylashgan. Rasmiy aholi soni 1,86 million atrofida bo‘lib, keng metropoliten hududida 3,27 millionga yetadi, bu esa Varshavani [[Yevropa Ittifoqidagi shaharlar aholisi bo‘yicha ro‘yxat|Yevropa Ittifoqidagi 6-eng ko‘p aholili shahar]]ga aylantiradi.<ref name="GUS - Bank Danych Lokalnych"/> Shahar maydoni {{convert|517|km2|abbr=on}} ni tashkil etib, 18 ta [[Varshava tumanlari va mahallalari ro‘yxati|tuman]]ni o‘z ichiga oladi, metropoliten hududi esa {{convert|6100|km2|abbr=on|0}} ni qamrab oladi.<ref name=goeuro2012/> Varshava [[Globalization and World Cities Research Network#Alpha 2|alpha]] darajadagi [[global city|global shahar]] hisoblanadi,<ref>{{cite web |title=The World According to GaWC 2020 |url=https://www.lboro.ac.uk/gawc/world2020t.html |department=GaWC – Research Network |publisher=Globalization and World Cities |access-date=31 August 2020 |archive-date=24 August 2020 |archive-url=https://web.archive.org/web/20200824031341/https://www.lboro.ac.uk/gawc/world2020t.html |url-status=live }}</ref> siyosiy, iqtisodiy va madaniy markaz, shuningdek mamlakat hukumatining joylashgan joyidir. Shuningdek, u [[Mazovya viloyati]]ning poytaxtidir.
+,{{efn|Ingliz tilida talaffuzi: {{IPAc-en|ˈ|w|ɔːr|s|ɔː}}, {{Respell|WOR|saw}}; {{langx|pl|Warszawa}} {{IPA|pl|varˈʂava||Pl-Warszawa.ogg}}; {{langx|la|Varsovia}} yoki {{lang|la|Varsavia}}}} rasmiy nomi bilan ,<ref>{{Cite web |url=http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001817 |title=''Polsha qonunlar jurnali'', 1817-son, 2018-yil |access-date=30 August 2021 |archive-date=30 August 2021 |archive-url=https://web.archive.org/web/20210830113953/http://isap.sejm.gov.pl/isap.nsf/DocDetails.xsp?id=WDU20180001817 |url-status=live }}</ref>{{efn|{{langx|pl|miasto stołeczne Warszawa|links=no}} {{IPA|pl|ˈmjastɔ stɔˈwɛt͡ʂnɛ varˈʂava||Pl-miasto stołeczne.ogg}}, qisqartmasi: {{lang|pl|m.st. Warszawa}}.}} Polshaning poytaxti va eng yirik shahri hisoblanadi.{{efn|Varshava aholisi bo‘yicha Polshaning eng yirik shahri, maydon bo‘yicha esa ikkinchi o‘rinda turadi.<ref>{{cite web |author=<!-- ko‘rsatilmagan --> |date=2024 |title=Polshadagi eng katta maydonli shaharlar |url=https://www.polskawliczbach.pl/miasta_o_najwiekszej_powierzchni_w_polsce |website=polskawliczbach.pl |lang=pl |access-date=3 January 2026}}</ref>}}{{TERYT}} Metropoliten sharqiy-markaziy Polshada [[Visla daryosi|Visla daryosi]] bo‘yida joylashgan. Rasmiy aholi soni 1,86 million atrofida bo‘lib, kengaytirilgan metropoliten hududida 3,27 millionga yetadi, bu esa Varshavani [[Yevropa Ittifoqidagi shaharlar ro‘yxati|Yevropa Ittifoqidagi 6-eng ko‘p aholili shahar]]ga aylantiradi.<ref name="GUS - Bank Danych Lokalnych"/> Shahar maydoni {{convert|517|km2|abbr=on}} ni tashkil etib, 18 ta tumanni o‘z ichiga oladi, metropoliten hududi esa {{convert|6100|km2|abbr=on|0}} maydonni qamrab oladi.<ref name=goeuro2012/> Varshava [[Globalization and World Cities Research Network#Alpha 2|alpha]] darajadagi [[global city]] hisoblanadi,<ref>{{cite web |title=The World According to GaWC 2020 |url=https://www.lboro.ac.uk/gawc/world2020t.html |department=GaWC – Research Network |publisher=Globalization and World Cities |access-date=31 August 2020 |archive-date=24 August 2020 |archive-url=https://web.archive.org/web/20200824031341/https://www.lboro.ac.uk/gawc/world2020t.html |url-status=live }}</ref> siyosiy, iqtisodiy va madaniy markaz hamda mamlakat hukumatining joylashgan joyidir. Shuningdek, u [[Mazovya viloyati]]ning poytaxtidir.
 
-Varshava o‘z kelib chiqishini [[Mazovya]]dagi kichik baliq ovlash shaharchasidan oladi. Shahar 16-asr oxirida mashhurlikka erishdi, chunki [[Sigismund III]] Polsha poytaxtini va qirollik saroyini [[Krakov]]dan ko‘chirishga qaror qildi. 18-asrga kelib Varshava [[Gdansk]]ni aholisi bo‘yicha ortda qoldirdi. U 1795-yilgacha [[Polsha-Litva hamdo‘stligi]] poytaxti bo‘lib xizmat qilgan, keyinchalik esa [[Napoleon]]ning [[Varshava gersogligi]] markazi bo‘ldi. 19-asr va uning [[Sanoat inqilobi]] demografik o‘sishni keltirib chiqardi, bu esa Varshavani Yevropaning eng yirik va zich aholili shaharlaridan biriga
+Varshava o‘z ildizlarini [[Mazovya]]dagi kichik baliqchi qishlog‘idan oladi. Shahar 16-asr oxirida mashhurlikka erishdi, chunki [[Sigismund III]] Polsha poytaxti va qirollik saroyini [[Krakov]]dan ko‘chirishga qaror qildi. 18-asrga kelib Varshava Polshaning eng ko‘p aholili shahri sifatida [[Gdansk]]ni ortda qoldirdi. U 1795-yilgacha [[Polsha-Litva hamdo‘stligi]] poytaxti bo‘lib xizmat qilgan, keyinchalik esa [[Napoleon]]ning [[Varshava gersogligi]] markazi bo‘ldi. 19-asr va uning [[Sanoat inqilobi]] demografik o‘sishni keltirib chiqardi, bu esa Varshavani Yevropaning eng yirik va zich aholi yashaydigan shaharlaridan biriga aylantirdi. O‘sha davrda o‘zining nafis arxitekturasi va bulvarlari bilan mashhur bo‘lgan Varshava 1939-yilda [[Ikkinchi j
 
 
 == Manbalar ==
