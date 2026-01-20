@@ -1,0 +1,12 @@
+2026-01-20 07:17:25 [INFO] ✅ OpenAI client initialized
+2026-01-20 07:17:29 [INFO] 🧪 Running in DRAFT MODE
+2026-01-20 07:17:29 [INFO] ============================================================
+2026-01-20 07:17:29 [INFO] 🤖 UZBEK WIKIPEDIA BOT v3.0
+2026-01-20 07:17:29 [INFO] ============================================================
+2026-01-20 07:17:33 [DEBUG] ✅ Fetched English intro for 'Warsaw' (17393 chars)
+2026-01-20 07:17:33 [INFO] 🤖 Translating via AI (gpt-4.1-mini)...
+2026-01-20 07:18:27 [ERROR] 💥 Error: Edit to page [[uz:Foydalanuvchi:DanikBotUZ/Qoralama/Varshava]] failed:
+blocked: '''Your IP address is in a range that has been [[m:Special:MyLanguage/Global blocks|blocked on all Wikimedia Foundation wikis]].''' The block was made by [[Foydalanuvchi:Jon Kolbert|‪Jon Kolbert‬]]. The reason given is ''[[m:NOP|Open proxy/Webhost]]: Visit the [[m:WM:OP/H|FAQ]] if you are affected ''. * Start of block: 06:10, 2024-yil 3-fevral * Expiry of block: 06:10, 2026-yil 3-sentyabr Your current IP address is 34.133.108.253. The blocked range is 34.133.0.0/16. Arizaga bularni ilova qilishingiz mumkin. If you believe you were blocked by mistake, you can find additional information and instructions in the [[m:Special:MyLanguage/Stewards/Wizard|Stewards Block Wizard]].
+[blockinfo: {'blockid': 3218380, 'blockedby': 'Jon Kolbert', 'blockedbyid': 29688, 'blockreason': '[[m:NOP|Open proxy/Webhost]]: Visit the [[m:WM:OP/H|FAQ]] if you are affected <!-- Google Cloud -->', 'blockedtimestamp': '2024-02-03T06:10:55Z', 'blockexpiry': '2026-09-03T06:10:55Z', 'blocknocreate': '', 'blockowntalk': '', 'blockedtimestampformatted': '06:10, 2024-yil 3-fevral', 'blockexpiryformatted': '06:10, 2026-yil 3-sentyabr', 'blockexpiryrelative': '7 oydan keyin'};
+ servedby: mw-api-ext.codfw.main-85c8f94d7b-ltbzq;
+ help: See https://uz.wikipedia.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes.]

@@ -1,0 +1,35 @@
+2026-01-20 07:15:27 [INFO] ✅ GitHub Models client initialized
+2026-01-20 07:15:30 [INFO] 🧪 Running in DRAFT MODE
+2026-01-20 07:15:30 [INFO] ============================================================
+2026-01-20 07:15:30 [INFO] 🤖 UZBEK WIKIPEDIA BOT v3.0
+2026-01-20 07:15:30 [INFO] ============================================================
+2026-01-20 07:15:37 [DEBUG] ✅ Fetched English intro for 'Warsaw' (17393 chars)
+2026-01-20 07:15:37 [INFO] 🤖 Translating via GitHub Models (gpt-4o)...
+2026-01-20 07:15:39 [WARNING] API attempt 1 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:16:25 [WARNING] API attempt 2 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:17:34 [WARNING] API attempt 3 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:19:17 [WARNING] API attempt 4 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:21:19 [WARNING] API attempt 5 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:23:22 [WARNING] API attempt 6 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:25:24 [WARNING] API attempt 7 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:27:26 [WARNING] API attempt 8 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:29:28 [WARNING] API attempt 9 failed: Operation returned an invalid status 'Unauthorized'
+Content: Unauthorized
+
+2026-01-20 07:42:42 [WARNING] API attempt 10 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))

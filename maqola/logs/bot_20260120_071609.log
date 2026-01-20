@@ -1,0 +1,35 @@
+2026-01-20 07:16:09 [INFO] ✅ GitHub Models client initialized
+2026-01-20 07:16:13 [INFO] 🧪 Running in DRAFT MODE
+2026-01-20 07:16:13 [INFO] ============================================================
+2026-01-20 07:16:13 [INFO] 🤖 UZBEK WIKIPEDIA BOT v3.0
+2026-01-20 07:16:13 [INFO] ============================================================
+2026-01-20 07:16:16 [DEBUG] ✅ Fetched English intro for 'Warsaw' (17393 chars)
+2026-01-20 07:16:16 [INFO] 🤖 Translating via GitHub Models (gpt-4.1-mini)...
+2026-01-20 07:16:16 [WARNING] API attempt 1 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:17:01 [WARNING] API attempt 2 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:18:09 [WARNING] API attempt 3 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:19:50 [WARNING] API attempt 4 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:21:50 [WARNING] API attempt 5 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:23:50 [WARNING] API attempt 6 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:25:50 [WARNING] API attempt 7 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:27:50 [WARNING] API attempt 8 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:29:51 [WARNING] API attempt 9 failed: (invalid_api_key) Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+Code: invalid_api_key
+Message: Incorrect API key provided: sk-2Tbnm*************ucc5. You can find your API key at https://platform.openai.com/account/api-keys.
+2026-01-20 07:42:42 [WARNING] API attempt 10 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
